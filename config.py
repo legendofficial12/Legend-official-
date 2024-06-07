@@ -17,12 +17,12 @@ def is_enabled(value, default):
 
 class Config(object):
     # Bot Information 
-    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "")
-    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "") # Bot username without @.
+    TECH_VJ_BOT_TOKEN = os.environ.get("TECH_VJ_BOT_TOKEN", "6848246477:AAFELpXaTOPzNleut5O_JjcpIn72fQ09dWw")
+    TECH_VJ_BOT_USERNAME = os.environ.get("TECH_VJ_BOT_USERNAME", "LegendExtractor1_bot") # Bot username without @.
     
     # The Telegram API things
-    TECH_VJ_API_ID = int(os.environ.get("TECH_VJ_API_ID", ""))
-    TECH_VJ_API_HASH = os.environ.get("TECH_VJ_API_HASH", "")
+    TECH_VJ_API_ID = int(os.environ.get("TECH_VJ_API_ID", "29500466"))
+    TECH_VJ_API_HASH = os.environ.get("TECH_VJ_API_HASH", "97de63084b44bb7ca5ab11d1252fa098")
     
     # the download location, where the HTTP Server runs
     TECH_VJ_DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -47,11 +47,12 @@ class Config(object):
     TECH_VJ_PROCESS_MAX_TIMEOUT = 3600
     
     # your telegram account id
-    TECH_VJ_OWNER_ID = int(os.environ.get("TECH_VJ_OWNER_ID", "")) 
+    TECH_VJ_OWNER_ID = int(os.environ.get("TECH_VJ_OWNER_ID", "7009468802")) 
     TECH_VJ_SESSION_NAME = "VJ-URL-UPLOADER-BOT"
     
     # database uri (mongodb)
-    TECH_VJ_DATABASE_URL = os.environ.get("TECH_VJ_DATABASE_URL", "")
+    TECH_VJ_DATABASE_URL = os.environ.get("TECH_VJ_DATABASE_URL", "mongodb+srv://skphotograph029:<UjgLGwm2oRc8Tj5R>@cluster.zjohrgr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster
+")
     TECH_VJ_MAX_RESULTS = "50"
 
     # channel information
@@ -62,7 +63,7 @@ class Config(object):
     TECH_VJ_UPDATES_CHANNEL = int(tech_vj_update_channel) if tech_vj_update_channel and id_pattern.search(tech_vj_update_channel) else None  
     
     # Url Shortner Information 
-    TECH_VJ = bool(environ.get('TECH_VJ', True)) # Set False If you want shortlink off else True
+    TECH_VJ = bool(environ.get('TECH_VJ', False)) # Set False If you want shortlink off else True
     TECH_VJ_URL = environ.get('TECH_VJ_URL', 'moneykamalo.com') # your shortlink url domain or url without https://
     TECH_VJ_API = environ.get('TECH_VJ_API', '0eefb93e1e3ce9470a7033115ceb1bad13a9d674') # your url shortner api
     TECH_VJ_TUTORIAL = os.environ.get("TECH_VJ_TUTORIAL", "https://t.me/How_To_Open_Linkl")
